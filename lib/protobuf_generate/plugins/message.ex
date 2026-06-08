@@ -127,7 +127,7 @@ defmodule ProtobufGenerate.Plugins.Message do
       syntax: syntax,
       map: msg_options && msg_options.map_entry,
       deprecated: msg_options && msg_options.deprecated,
-      protoc_gen_elixir_version: "\"#{Util.version()}\""
+      protoc_gen_elixir_version: Util.version()
     }
 
     str = Util.options_to_str(opts)

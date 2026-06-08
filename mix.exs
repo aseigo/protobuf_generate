@@ -57,7 +57,7 @@ defmodule ProtobufGenerate.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:protobuf, "~> 0.12"},
+      {:protobuf, "~> 0.17"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:google_protobuf,
        github: "protocolbuffers/protobuf",
@@ -71,7 +71,7 @@ defmodule ProtobufGenerate.MixProject do
        branch: "master",
        app: false,
        compile: false,
-       only: [:dev, :test]},
+       only: [:dev, :test]}
     ]
   end
 end

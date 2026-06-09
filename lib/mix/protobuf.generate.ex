@@ -101,7 +101,7 @@ defmodule Mix.Tasks.Protobuf.Generate do
 
   defp decode(files, imports, bin) do
     %Google.Protobuf.FileDescriptorSet{file: file_descriptors} =
-      Protobuf.Decoder.decode(bin, Google.Protobuf.FileDescriptorSet)
+      Protobuf.decode(bin, Google.Protobuf.FileDescriptorSet)
 
     files = normalize_import_paths(files, imports, [])
 

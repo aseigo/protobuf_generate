@@ -38,7 +38,7 @@ defmodule ProtobufGenerate.Plugins.Enum do
       Util.options_to_str(%{
         syntax: ctx.syntax,
         enum: true,
-        protoc_gen_elixir_version: "\"#{Util.version()}\""
+        protoc_gen_elixir_version: Util.version()
       })
 
     descriptor_fun_body =

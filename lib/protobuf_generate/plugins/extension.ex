@@ -44,7 +44,7 @@ defmodule ProtobufGenerate.Plugins.Extension do
         use_options =
           Util.options_to_str(%{
             syntax: ctx.syntax,
-            protoc_gen_elixir_version: "\"#{Util.version()}\""
+            protoc_gen_elixir_version: Util.version()
           })
 
         {msg_name,

@@ -417,8 +417,8 @@ defmodule Mix.Tasks.Protobuf.GenerateTest do
 
                  * `active` (`bool`): Multi-line field comment
 
-                    With a second line that _continues_ onto
-                    a third.
+                   With a second line that _continues_ onto
+                   a third.
 
                \"\"\"
              """

@@ -27,7 +27,7 @@ This package can be installed by adding `protobuf_generate` to your list of depe
 ```elixir
 def deps do
   [
-    {:protobuf_generate, "~> 0.1.0"}
+    {:protobuf_generate, "~> 0.2.0"}
   ]
 end
 ```
